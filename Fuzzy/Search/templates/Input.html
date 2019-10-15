@@ -1,0 +1,54 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fuzzy</title>
+    </head>
+
+    <body>
+
+            <table>
+
+                <form method='post'>
+
+                    {% csrf_token %}
+
+                    <center>
+
+                        <tr>
+
+                            <b><p> Welcome to Fuzzy Search Engine.</p></b>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Type here!
+                            </td>
+
+                            <td>
+                                {{ form.Input_Word }}
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="submit" />
+                            </td>
+
+                        </tr>
+
+                    </center>
+
+                </form>
+
+            </table>
+
+
+    </body>
+</html>
