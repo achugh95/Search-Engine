@@ -3,6 +3,12 @@ from . import views
 
 urlpatterns = [
 
+    # Django UI
+    url(r'^query$', views.search, name='search'),
+
+    # REST API Endpoint
+    url(r'^search$', views.search_service, name='search service'),
+
     # One time operation to upload the CSV into the local DB
     url(r'^UpdateDataset$', views.update_dataset, name='update_dataset'),
 
