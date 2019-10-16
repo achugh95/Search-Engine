@@ -12,6 +12,7 @@ class TestUrls(TestCase):
         # print(url)
         assert resolve(url).view_name == 'query'
 
+    # Search API 
     def test_search_service(self):
         url = reverse('search service')
         print(url)
