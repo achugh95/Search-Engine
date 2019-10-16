@@ -150,7 +150,14 @@ def search_service(request):
     # If the input is an Empty String
 
     if input_word == '':
-        return HttpResponse(" Empty String detected. Please enter at least one character to get the suggestions.")
+        final_results = {}
+        key = "Status"
+        final_results[key] = "Empty String detected. Please enter at least one character to get the suggestions."
+
+        import json
+        final_results = json.dumps(final_results)
+
+        return HttpResponse(final_results, content_type='json')
 
     # Converting the input to lower case
     input_word = input_word.lower()
@@ -165,7 +172,14 @@ def search_service(request):
     # Handling corner cases of 0 and 1.
 
     if results.count() == 0:
-        return HttpResponse("We don't have any suggestions. Sorry :(", content_type=str)
+        final_results = {}
+        key = "Status"
+        final_results[key] = "We don't have any suggestions. Sorry :("
+
+        import json
+        final_results = json.dumps(final_results)
+
+        return HttpResponse(final_results, content_type='json')
 
     elif results.count() == 1:
         final_results = {}
@@ -255,6 +269,7 @@ def search_service(request):
     # Converting the Dictionary to the JSON.
     import json
 
+    final_results = json.dumps(final_results)
     final_results = json.dumps(final_results)
     print(final_results)
 
