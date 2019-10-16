@@ -20,6 +20,13 @@ def search(request):
 
         if form.is_valid():
             input_word = form.cleaned_data['Input_Word']
+
+            # If the input is an Empty String
+
+            if input_word == '':
+                return HttpResponse(
+                    " Empty String detected. Please enter at least one character to get the suggestions.")
+
             print("Input Word:", input_word)
 
             # Querying the DB for possible matches
@@ -119,6 +126,12 @@ def search_service(request):
     print('Search Service called.')
 
     input_word = request.GET.get('q')
+
+    # If the input is an Empty String
+
+    if input_word == '':
+        return HttpResponse(" Empty String detected. Please enter at least one character to get the suggestions.")
+
     # Querying the DB for possible matches
     results = Dataset.objects.filter(Q(word__contains=input_word))
 
