@@ -3,6 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="1a95c07c-2cfd-44ff-8963-624f3cf3a232" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Fuzzy/Search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzy/Search/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine/search-engine/src/tslint.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/Fuzzy/Search/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -65,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Fuzzy/Search/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="147" column="35" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+            <state relative-caret-position="422">
+              <caret line="154" column="54" selection-start-line="154" selection-start-column="54" selection-end-line="154" selection-end-column="54" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -317,14 +337,14 @@
     <entry file="file://$PROJECT_DIR$/Fuzzy/Search/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fuzzy/Search/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="147" column="35" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+        <state relative-caret-position="422">
+          <caret line="154" column="54" selection-start-line="154" selection-start-column="54" selection-end-line="154" selection-end-column="54" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
