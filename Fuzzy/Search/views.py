@@ -29,8 +29,26 @@ def search(request):
 
             print("Input Word:", input_word)
 
+            # Converting the input to lower case
+            input_word = input_word.lower()
+
             # Querying the DB for possible matches
             results = Dataset.objects.filter(Q(word__contains=input_word))
+
+            # Handling corner cases of 0 and 1.
+
+            if results.count() == 0:
+                return HttpResponse("We don't have any suggestions. Sorry :(")
+
+            elif results.count() == 1:
+                final_results = {}
+                for i in results:
+                    final_results[i.word] = i.count
+
+                import json
+                final_results = json.dumps(final_results)
+
+                return HttpResponse(final_results, content_type='json')
 
             print("Total matches found:")
             print(results.count())
@@ -108,7 +126,7 @@ def search(request):
             import json
 
             final_results = json.dumps(final_results)
-            print(final_results, type(final_results))
+            print(final_results)
 
         return render(request, 'Output.html', {'input_word': input_word, 'results': final_results})
 
@@ -127,10 +145,15 @@ def search_service(request):
 
     input_word = request.GET.get('q')
 
+    print('Input Word:', input_word)
+
     # If the input is an Empty String
 
     if input_word == '':
         return HttpResponse(" Empty String detected. Please enter at least one character to get the suggestions.")
+
+    # Converting the input to lower case
+    input_word = input_word.lower()
 
     # Querying the DB for possible matches
     results = Dataset.objects.filter(Q(word__contains=input_word))
@@ -138,6 +161,23 @@ def search_service(request):
     print("Total matches found:")
     print(results.count())
     print("-------------------")
+
+    # Handling corner cases of 0 and 1.
+
+    if results.count() == 0:
+        return HttpResponse("We don't have any suggestions. Sorry :(", content_type=str)
+
+    elif results.count() == 1:
+        final_results = {}
+        for i in results:
+            final_results[i.word] = i.count
+
+        import json
+        final_results = json.dumps(final_results)
+
+        print(final_results)
+
+        return HttpResponse(final_results, content_type='json')
 
     #           *** Algorithm/Notes ***
     #
@@ -216,7 +256,7 @@ def search_service(request):
     import json
 
     final_results = json.dumps(final_results)
-    print(final_results, type(final_results))
+    print(final_results)
 
     return HttpResponse(final_results, content_type='json')
 
