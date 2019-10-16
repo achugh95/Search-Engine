@@ -4,7 +4,7 @@ from . import views
 urlpatterns = [
 
     # Django UI
-    url(r'^query$', views.search, name='search'),
+    url(r'^query$', views.search, name='query'),
 
     # REST API Endpoint
     url(r'^search$', views.search_service, name='search service'),
