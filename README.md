@@ -15,7 +15,7 @@ entertainment 111394818
 agreement 111356320
 format 111279626
 
-A web app where the user types in a single word from this list in a search box. We wish to autocomplete the input in the search box. 
+A web app where the user types in a single word from this list in a search box. We wish to autocomplete the input in the search box.
 
 The objective is to write a Python app using Django framework that exposes a single endpoint:
 
@@ -27,6 +27,7 @@ up procrastination, the service might receive this sequence of requests:
 GET /search?word=pro
 GET /search?word=procr
 GET /search?word=procra
+
 The response should be a JSON array containing upto 25 results, ranked by some criteria (see
 below).
 
