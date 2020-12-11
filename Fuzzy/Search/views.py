@@ -6,7 +6,7 @@ from django.db.models import Q              # Encapsulates our Query
 
 # Create your views here.
 
-# This function is provides an HTML based template to take input and returns the output on a HTML page as well.
+# This function provides an HTML based template to take input and returns the output on a HTML page as well.
 # Django based UI
 
 
